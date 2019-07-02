@@ -1,6 +1,5 @@
 {
   "name": "root",
-  "private": true,
   "devDependencies": {
     "@types/invariant": "^2.2.30",
     "@types/react-native": "^0.57.65",
