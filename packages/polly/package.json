@@ -1,6 +1,6 @@
 {
   "name": "@react-native-speak/polly",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1-alpha.0",
   "description": "Amazon Polly provider module for react-native-speak",
   "keywords": [
     "react-native-speak"
