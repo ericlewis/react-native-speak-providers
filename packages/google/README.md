@@ -1,11 +1,14 @@
-# `google`
+# `Google`
 
-> TODO: description
+A GoogleTTS Speech Provider
 
 ## Usage
 
-```
-const google = require('@react-native-speak/google');
+```javascript
+import { GoogleProvider } from '@react-native-speak/google';
 
-// TODO: DEMONSTRATE API
+const google = new GoogleProvider('SUPERSECRET');
+
+const speech = new Speech([google]);
+speech.speak('Hello');
 ```
