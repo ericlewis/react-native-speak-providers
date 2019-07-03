@@ -1,6 +1,6 @@
 {
   "name": "@react-native-speak/google",
-  "version": "0.2.0-alpha.0",
+  "version": "0.2.1-alpha.0",
   "description": "Google TTS provider module for react-native-speak",
   "keywords": [
     "react-native-speak"
@@ -24,6 +24,6 @@
     "url": "https://github.com/ericlewis/react-native-speak-providers/issues"
   },
   "devDependencies": {
-    "@react-native-speak/base": "^0.2.0-alpha.0"
+    "@react-native-speak/base": "^0.2.1-alpha.0"
   }
 }
