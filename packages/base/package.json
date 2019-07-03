@@ -1,6 +1,6 @@
 {
   "name": "@react-native-speak/base",
-  "version": "0.1.1-alpha.0",
+  "version": "0.2.0-alpha.0",
   "description": "Base provider module for react-native-speak",
   "keywords": [
     "react-native-speak"
