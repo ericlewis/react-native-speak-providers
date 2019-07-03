@@ -1,0 +1,29 @@
+{
+  "name": "@react-native-speak/native",
+  "version": "0.1.0-alpha.0",
+  "description": "Native provider module for react-native-speak",
+  "keywords": [
+    "react-native-speak"
+  ],
+  "author": "Eric Lewis <ericlewis777@gmail.com>",
+  "homepage": "https://github.com/ericlewis/react-native-speak-providers/packages/native",
+  "license": "MIT",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericlewis/react-native-speak-providers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericlewis/react-native-speak-providers/issues"
+  },
+  "devDependencies": {
+    "@react-native-speak/base": "^0.1.0-alpha.0"
+  }
+}

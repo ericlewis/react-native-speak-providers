@@ -3,6 +3,7 @@
   "references": [
     { "path": "packages/base" },
     { "path": "packages/google" },
-    { "path": "packages/polly" }
+    { "path": "packages/polly" },
+    { "path": "packages/native" }
   ]
 }
