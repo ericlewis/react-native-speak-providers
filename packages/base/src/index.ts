@@ -39,7 +39,7 @@ export abstract class Provider implements ProviderInterface {
   /**
    * Plays a base64 encoded string on the native platform
    * @param content base64 encoded string
-   * @param options
+   * @param options the SpeechOptions
    */
   public playAudioContent(
     content: string,

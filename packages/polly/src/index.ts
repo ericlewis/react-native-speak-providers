@@ -12,7 +12,6 @@ export class PollyProvider extends Provider {
 
   public async getVoices(): Promise<Voice[]> {
     const { Voices } = await this.polly.describeVoices().promise();
-    // TODO: handle this force unwrapping
     return Voices!.map(({ Id, Name }) => ({
       id: this.sluggifyVoiceId(Id!),
       name: Name!,

@@ -48,7 +48,7 @@ export class GoogleProvider extends Provider {
         },
       }),
       headers: {
-        'X-Goog-Api-Key': this.accessToken!,
+        'X-Goog-Api-Key': this.accessToken || "BADKEY",
       },
     });
 

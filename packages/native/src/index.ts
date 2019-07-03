@@ -30,7 +30,6 @@ export class NativeProvider extends Provider {
       );
     }
 
-    // TODO: these settings may vary between OS
     return this.native.speak(utterance, {
       ...options,
       pitch: options.pitch ? scale(options.pitch, -1, 1, 0.5, 2.0) : 1.0,
