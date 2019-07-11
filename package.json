@@ -3,6 +3,7 @@
   "private": true,
   "devDependencies": {
     "@types/invariant": "^2.2.30",
+    "@types/node": "^12.6.2",
     "@types/react-native": "^0.57.65",
     "invariant": "^2.2.4",
     "lerna": "^3.13.4",

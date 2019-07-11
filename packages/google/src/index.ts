@@ -18,11 +18,18 @@ export class GoogleProvider extends Provider {
       },
     });
 
-    const { voices }: { voices: Array<{ name: string }> } = await res.json();
-    return voices.map(({ name }) => ({
-      id: this.sluggifyVoiceId(name),
-      name,
-    }));
+    const json = await res.json();
+    
+    // don't crash!
+    try {
+      const { voices }: { voices: Array<{ name: string }> } = json
+      return voices.map(({ name }) => ({
+        id: this.sluggifyVoiceId(name),
+        name,
+      }));
+    } catch (error) {
+      return []
+    }
   }
 
   public async getAudioContent(utterance: string, options: SpeechOptions) {
