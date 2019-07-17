@@ -1,6 +1,6 @@
 {
   "name": "@react-native-speak/native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native provider module for react-native-speak",
   "keywords": [
     "react-native-speak"
@@ -24,6 +24,6 @@
     "url": "https://github.com/ericlewis/react-native-speak-providers/issues"
   },
   "devDependencies": {
-    "@react-native-speak/base": "^1.0.0"
+    "@react-native-speak/base": "^1.0.1"
   }
 }
