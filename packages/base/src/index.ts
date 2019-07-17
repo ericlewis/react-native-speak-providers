@@ -2,6 +2,7 @@ import invariant from 'invariant';
 import { Platform } from 'react-native';
 import { RNSpeak } from 'react-native-speak';
 import { SpeechOptions, Voice } from 'react-native-speak';
+import fetch from 'react-native-fetch-polyfill';
 
 export interface ProviderInterface {
   getVoices: () => Promise<Voice[]>;
@@ -90,6 +91,13 @@ export abstract class Provider implements ProviderInterface {
     }
 
     return options;
+  }
+
+  /**
+   * Base fetch implementation, which uses the polyfill to allow timeouts to be set
+   */
+  protected fetch(url: string, ops: any) {
+    return fetch(url, { timeout: 5 * 1000, ...ops });
   }
 
   /**

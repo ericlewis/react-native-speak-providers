@@ -36,7 +36,7 @@ export class GoogleProvider extends Provider {
     invariant(this.accessToken, 'No access token provided');
 
     const ssml = this.getSSML(utterance, options);
-    const raw = await fetch(this.getBaseURL('text:synthesize'), {
+    const raw = await this.fetch(this.getBaseURL('text:synthesize'), {
       method: 'POST',
       body: JSON.stringify({
         input: {
