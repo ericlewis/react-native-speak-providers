@@ -16,6 +16,9 @@
   "files": [
     "src"
   ],
+  "dependencies": {
+    "react-native-fetch-polyfill": "1.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ericlewis/react-native-speak-providers.git"
