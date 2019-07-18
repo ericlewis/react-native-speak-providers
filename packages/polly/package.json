@@ -1,6 +1,6 @@
 {
   "name": "@react-native-speak/polly",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Amazon Polly provider module for react-native-speak",
   "keywords": [
     "react-native-speak"
@@ -27,6 +27,6 @@
     "aws-sdk": "^2.464.0"
   },
   "devDependencies": {
-    "@react-native-speak/base": "^1.0.1"
+    "@react-native-speak/base": "^1.0.2"
   }
 }
