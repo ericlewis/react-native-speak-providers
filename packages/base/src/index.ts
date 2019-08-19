@@ -72,11 +72,8 @@ export abstract class Provider implements ProviderInterface {
    */
   public optionsCompatible(options: SpeechOptions) {
     const { voiceId, speakingRate, codec } = options;
-    if (voiceId) {
-      invariant(
-        this.isValidVoiceId(voiceId),
-        'VoiceId belongs to a different provider'
-      );
+    if (voiceId && !this.isValidVoiceId(voiceId)) {
+      delete options.voiceId;
     }
 
     if (speakingRate) {
